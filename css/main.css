@@ -1,4 +1,46 @@
 html {
   background-color: #000000;
+  height: 100%
+}
+
+nav a {
+  font-family: 'Lato', sans-serif;
+  color: #ffff;
+}
+
+.nav-masthead {
+  text-align: right;
+  display: block;
+}
+
+h2 {
   color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.square {
+  position: relative;
+  width: 50%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
