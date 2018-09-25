@@ -3,44 +3,87 @@ html {
   height: 100%
 }
 
-nav a {
-  font-family: 'Lato', sans-serif;
-  color: #ffff;
-}
-
-.nav-masthead {
-  text-align: right;
-  display: block;
-}
-
 h2 {
   color: #fff;
   font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  display: inline;
 }
 
 h1 {
-  color: #fff;
+  color: #000;
   font-family: 'Lato', sans-serif;
+  font-size: 4rem;
 }
 
 p {
-  color: #fff;
+  color: #000;
   font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
 }
 
-.square {
-  position: relative;
-  width: 50%;
+.main {
+  font-size: 2rem;
 }
 
-.square:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+body {
+  margin: 0;
 }
 
-.content {
+hr {
+  color: #fff;
+  margin: auto;
+  width: 60%;
+}
+
+.topleft {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bg {
+  background-image: url("../images/background.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.social-icons {
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 25em) {
+
+.social-icons {
+  position: absolute;
+}
+
 }
